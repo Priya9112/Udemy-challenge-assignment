@@ -4,7 +4,7 @@ int main()
 {
     string a;
     cout<<"Please enter something:";
-    cin>>a;
+    getline(cin,a);
     cout<<"--------------------------"<<endl;
     size_t n=a.size();
     for(size_t i {1};i<=n;i++)
