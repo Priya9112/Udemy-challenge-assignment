@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string a;
+    cout<<"Please enter something:";
+    cin>>a;
+    cout<<"--------------------------"<<endl;
+    size_t n=a.size();
+    for(size_t i {1};i<=n;i++)
+    {
+        for(size_t b{n-i};b>=1;b--)
+        cout<<" ";
+        if(n<=1)
+        {
+            cout<<a;
+        }
+        else
+        {
+            for(size_t k {0},j {i-1};k<((i * 2)-1);k++)
+                if(k>=i)
+                    {
+                        j--;
+                        cout<<a.at(j);
+                    }
+                else
+                    {
+                        cout<<a.at(k);
+                    }
+        
+            
+        }
+        cout<<endl;
+    
+    }
+
+    return 0;
+}
